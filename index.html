@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Akpan - Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#home" class="logo">DA</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-btn" id="closeMenu">&times;</button>
+        <ul class="mobile-nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#impact">Impact</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <!-- Replace this with your own background image or video -->
+        <div class="hero-bg" style="background-image: url('images/my\ dp.png');">
+        </div>
+        <div class="hero-content">
+            <h1 class="fade-in">David Akpan</h1>
+            <p class="fade-in">Full Stack Developer | Building Digital Solutions</p>
+            <div class="hero-buttons fade-in">
+                <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <!-- Replace with your professional photo -->
+                    <div class="profile-placeholder">
+                        <span>Your Photo Here</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Building Scalable Web Solutions</h3>
+                    <p>With over 5 years of experience in full-stack development, I specialize in creating robust, scalable web applications that drive business growth. My expertise spans both frontend and backend technologies, allowing me to deliver complete solutions from concept to deployment.</p>
+                    <p>I have successfully delivered projects for startups, SMEs, and enterprise clients across various industries including fintech, e-commerce, and healthcare. My approach focuses on understanding business needs and translating them into efficient, maintainable code.</p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <h4>50+</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="highlight">
+                            <h4>30+</h4>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="highlight">
+                            <h4>5+</h4>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <p class="section-subtitle">Recent projects showcasing my expertise</p>
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-project="1">
+                    <div class="project-image">
+                        <!-- Replace with your project screenshots -->
+                        <img src="images/eco.jpg" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-featured online store with payment integration</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-project="2">
+                    <div class="project-image">
+                        <img src="images/task 2.jpg" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Management App</h3>
+                        <p>Collaborative project management tool</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>Express</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-project="3">
+                    <div class="project-image">
+                        <img src="images/apart.jpg" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Real Estate Portal</h3>
+                        <p>Property listing and management system</p>
+                        <div class="project-tags">
+                            <span>Angular</span>
+                            <span>Django</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-project="4">
+                    <div class="project-image">
+                        <img src="images/medical.jpg" alt="Project 4">
+                    </div>
+                    <div class="project-info">
+                        <h3>Healthcare Dashboard</h3>
+                        <p>Patient management and analytics platform</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Python</span>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card" data-project="5">
+                    <div class="project-image">
+                        <img src="images/finace.jpg" alt="Project 5">
+                    </div>
+                    <div class="project-info">
+                        <h3>Finance Tracker</h3>
+                        <p>Personal budgeting and expense management</p>
+                        <div class="project-tags">
+                            <span>Next.js</span>
+                            <span>GraphQL</span>
+                            <span>Redis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card" data-project="6">
+                    <div class="project-image">
+                        <img src="images/se.jpg" alt="Project 6">
+                    </div>
+                    <div class="project-info">
+                        <h3>Social Media App</h3>
+                        <p>Community platform with real-time chat</p>
+                        <div class="project-tags">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                            <span>WebSocket</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Project details will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-subtitle">Technologies I work with</p>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>HTML5</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>CSS3 / SASS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>JavaScript / TypeScript</span>
+                            <span>92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 92%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>React / Next.js</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Node.js / Express</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Python / Django</span>
+                            <span>82%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 82%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>RESTful APIs / GraphQL</span>
+                            <span>87%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 87%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Microservices</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Database & Cloud</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>MongoDB / PostgreSQL</span>
+                            <span>86%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 86%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>AWS / Azure</span>
+                            <span>78%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 78%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Docker / Kubernetes</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>CI/CD</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="impact">
+        <div class="container">
+            <h2 class="section-title">How I've Helped Businesses Grow</h2>
+            <p class="section-subtitle">Real results for real clients</p>
+            
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>150% Revenue Increase</h3>
+                    <p>Redesigned and optimized e-commerce platform for a retail client, resulting in improved conversion rates and customer retention</p>
+                    <div class="impact-details">
+                        <span class="impact-metric">$2M+ in sales</span>
+                        <span class="impact-time">6 months</span>
+                    </div>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                    </div>
+                    <h3>70% Faster Load Times</h3>
+                    <p>Rebuilt legacy system with modern architecture, significantly improving performance and user experience for a fintech startup</p>
+                    <div class="impact-details">
+                        <span class="impact-metric">50K+ users</span>
+                        <span class="impact-time">3 months</span>
+                    </div>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3>40 Hours Saved Weekly</h3>
+                    <p>Developed custom automation tools and dashboard for operations team, streamlining workflows and reducing manual tasks</p>
+                    <div class="impact-details">
+                        <span class="impact-metric">10 team members</span>
+                        <span class="impact-time">ongoing</span>
+                    </div>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>10K+ New Users</h3>
+                    <p>Launched mobile app for healthcare provider, expanding their reach and improving patient engagement significantly</p>
+                    <div class="impact-details">
+                        <span class="impact-metric">4.8★ rating</span>
+                        <span class="impact-time">12 months</span>
+                    </div>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                        </svg>
+                    </div>
+                    <h3>99.9% Uptime</h3>
+                    <p>Implemented robust infrastructure and monitoring for SaaS platform, ensuring reliability for enterprise customers</p>
+                    <div class="impact-details">
+                        <span class="impact-metric">500+ companies</span>
+                        <span class="impact-time">24/7 support</span>
+                    </div>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <h3>$500K Cost Savings</h3>
+                    <p>Migrated client infrastructure to cloud with optimized architecture, reducing operational costs while improving scalability</p>
+                    <div class="impact-details">
+                        <span class="impact-metric">annual savings</span>
+                        <span class="impact-time">first year</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2 class="section-title">Client Reviews</h2>
+            <p class="section-subtitle">What clients say about working with me</p>
+            
+            <div class="reviews-carousel">
+                <button class="carousel-btn prev" id="prevReview">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                
+                <div class="reviews-track" id="reviewsTrack">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="https://via.placeholder.com/80x80/333/666?text=SM" alt="Client">
+                            <div class="review-author">
+                                <h4>Sarah Mitchell</h4>
+                                <p>CEO, TechStart Inc</p>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            ★★★★★
+                        </div>
+                        <p class="review-text">Working with John was exceptional. He delivered our e-commerce platform ahead of schedule and exceeded all expectations. His technical expertise and communication skills made the entire process smooth and efficient.</p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="https://via.placeholder.com/80x80/333/666?text=MR" alt="Client">
+                            <div class="review-author">
+                                <h4>Michael Rodriguez</h4>
+                                <p>CTO, FinanceFlow</p>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            ★★★★★
+                        </div>
+                        <p class="review-text">John rebuilt our legacy system with modern architecture that significantly improved performance. His ability to understand complex requirements and translate them into scalable solutions is outstanding.</p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="https://via.placeholder.com/80x80/333/666?text=EJ" alt="Client">
+                            <div class="review-author">
+                                <h4>Emily Johnson</h4>
+                                <p>Product Manager, HealthCare Pro</p>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            ★★★★★
+                        </div>
+                        <p class="review-text">The mobile app John developed for us has been a game-changer. User feedback has been overwhelmingly positive, and the app's performance is flawless. Highly recommend his services.</p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="https://via.placeholder.com/80x80/333/666?text=DK" alt="Client">
+                            <div class="review-author">
+                                <h4>David Kim</h4>
+                                <p>Founder, RetailHub</p>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            ★★★★★
+                        </div>
+                        <p class="review-text">John's work on our platform resulted in a 150% increase in revenue. His attention to detail and commitment to quality are unmatched. A true professional who delivers results.</p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="https://via.placeholder.com/80x80/333/666?text=LT" alt="Client">
+                            <div class="review-author">
+                                <h4>Lisa Thompson</h4>
+                                <p>Operations Director, CloudSys</p>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            ★★★★★
+                        </div>
+                        <p class="review-text">The automation tools John created saved our team 40 hours weekly. His understanding of our workflow and ability to create intuitive solutions made a huge impact on our productivity.</p>
+                    </div>
+                </div>
+
+                <button class="carousel-btn next" id="nextReview">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's discuss your project</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out through the form or connect with me on social media. I'm always open to discussing new projects and opportunities.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>john.doe@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>San Francisco, CA</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com" target="_blank" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="https://dribbble.com" target="_blank" aria-label="Dribbble">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm8.72 13.5c-.26-.08-2.42-.73-4.87-.34.17.48.34.96.48 1.44.05.16.11.33.16.49 2.69-1.09 3.79-2.66 4.02-2.97-.26.46-.59.88-.99 1.28-.4-.4-.73-.82-.99-1.28.23.31 1.33 1.88 4.02 2.97.05-.16.11-.33.16-.49.14-.48.31-.96.48-1.44-2.45-.39-4.61.26-4.87.34zM3.28 10.5c.26.08 2.42.73 4.87.34-.17-.48-.34-.96-.48-1.44-.05-.16-.11-.33-.16-.49-2.69 1.09-3.79 2.66-4.02 2.97.26-.46.59-.88.99-1.28.4.4.73.82.99 1.28-.23-.31-1.33-1.88-4.02-2.97-.05.16-.11.33-.16.49-.14.48-.31.96-.48 1.44 2.45.39 4.61-.26 4.87-.34zm8.72-7.22c-2.87 0-5.45 1.26-7.23 3.25.61-.16 3.05-.71 5.57-.32.91-1.69 1.91-3.11 2.1-3.37-.46-.35-.97-.64-1.52-.87-.08.11-.57.84-1.01 1.58.54.23 1.05.53 1.52.87.19-.26 1.19-1.68 2.1-3.37 2.52-.39 4.96.16 5.57.32-1.78-1.99-4.36-3.25-7.23-3.25zm-8.72 13.5c.23-.31 1.33-1.88 4.02-2.97-.05-.16-.11-.33-.16-.49-.14-.48-.31-.96-.48-1.44-2.45.39-4.61-.26-4.87-.34-.26.08-2.42.73-4.87.34.17.48.34.96.48 1.44.05.16.11.33.16.49 2.69-1.09 3.79-2.66 4.02-2.97-.26.46-.59.88-.99 1.28-.4-.4-.73-.82-.99-1.28zm17.44-2.78c-.23.31-1.33 1.88-4.02 2.97.05.16.11.33.16.49.14.48.31.96.48 1.44 2.45-.39 4.61.26 4.87.34.26-.08 2.42-.73 4.87-.34-.17-.48-.34-.96-.48-1.44-.05-.16-.11-.33-.16-.49-2.69 1.09-3.79 2.66-4.02 2.97.26-.46.59-.88.99-1.28.4.4.73.82.99 1.28z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Project inquiry">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 David Akpan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/1234567890" target="_blank" class="float-btn whatsapp-btn" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+        </a>
+        <a href="tel:+1234567890" class="float-btn phone-btn" aria-label="Call">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
